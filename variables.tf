@@ -55,3 +55,25 @@ variable "ssh_locaton" {
   description = "ip address that ssh into the server"
   type        = string
 }
+
+
+#rds variables
+variable "database_snapshot_identifier" {
+  description = "database snapshot name"
+  type        = string
+}
+
+variable "database_instance_class" {
+  description = "database instance type"
+  type        = string
+}
+
+variable "database_instance_identifier" {
+  description = "database instance identifier"
+  type        = string
+}
+
+variable "multi_az_deployment" {
+  description = "create a standby db instance"
+  type        = bool
+}
